@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: medicenter
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: medicenter
+      MYSQL_PASSWORD: medicenter
+    ports:
+      - "3306:3306"
